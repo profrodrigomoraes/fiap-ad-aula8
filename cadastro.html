@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+
+  <div class="cartao">
+    <h1>Cadastro</h1>
+    <p class="subtitulo">Preencha os campos abaixo para se cadastrar.</p>
+
+    <form id="form-cadastro" onsubmit="validarFormulario(event)">
+      <label for="campo-nome">Nome</label>
+      <input type="text" id="campo-nome" placeholder="Seu nome completo">
+
+      <label for="campo-email">E-mail</label>
+      <input type="email" id="campo-email" placeholder="seu@email.com">
+
+      <button type="submit">Cadastrar</button>
+    </form>
+
+    <p class="mensagem-formulario"></p>
+  </div>
+
+  <script src="cadastro.js"></script>
+</body>
+</html>
